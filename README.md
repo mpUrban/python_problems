@@ -11,3 +11,5 @@
 [Problem 4](https://github.com/mpUrban/python_problems/blob/master/problem4.py) - Find all pairs of an integer array whose sum is equal to a given number
 
 [Problem 5](https://github.com/mpUrban/python_problems/blob/master/problem5.py) - Find duplicate numbers in an array if it contains multiple duplicates
+
+[Problem 6](https://github.com/mpUrban/python_problems/blob/master/problem6.py) - How are duplicates removed from a given array

@@ -9,24 +9,22 @@
 import numpy as np
 
 #%%
-testArray = np.random.randint(10, size=(1,10))
-
-
+testArray = [2,1,5,8,4,5,4,7,3,9]
 
 #%%
-testArray = list(range(10))
-testArray[2] = 5 # inserting 5 as a duplicate
-print(testArray)
+testArraySorted = testArray.copy()
+testArraySorted.sort()
+print(testArraySorted)
 
 #%%
-tempArray = sorted(testArray)
-print(tempArray)
+previous = testArraySorted[0]
+resultArray = []
+resultArray.append(previous)
+#%%
+for i, element in enumerate(testArraySorted,start=0):
+    if(previous != element):
+        resultArray.append(element)
+    previous = element
 
 #%%
-newArray = []
-dupeArray = []
-for element in tempArray:
-    if element not in newArray:
-        newArray.append(element)
-    else:
-        dupeArray.append(element)
+print(resultArray)
